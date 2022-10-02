@@ -1,8 +1,7 @@
 import { atom } from "recoil";
 
-const pageIdxAtom = atom({
-  key: "pageIdx",
-  default: 0,
+const filesAtom = atom({
+  key: "files",
+  default: "",
 });
-
 export default pageIdxAtom;

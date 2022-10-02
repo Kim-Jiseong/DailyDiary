@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes, css } from "styled-components";
 import { colors } from "styles/theme";
 
 export const Container = styled.div`
@@ -7,8 +7,10 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: center; */
   position: relative;
+  background-color: ${colors.ivory};
+  /* perspective: 1000px; */
 `;
 export const Background = styled.img`
   width: 100%;
@@ -25,14 +27,35 @@ export const ContentWrapper = styled.div`
   display: inline-block;
   text-align: center;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background-color: ${colors.ivory};
+  /* transform: rotateX(20deg);
+  ${(props) =>
+    props.animation &&
+    css`
+      transition: all 3s;
+      transform-origin: center left;
+      transform: rotateX(10deg) rotateY(-180deg);
+    `} */
 `;
-export const ReloadBtn = styled.div`
-  font-size: 2.8rem;
+export const PrevBtn = styled.div`
+  font-size: 1.8rem;
   font-weight: 700;
   word-break: keep-all;
   margin-top: 2rem;
   color: ${colors.lightbrown};
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  cursor: pointer;
+`;
+export const NextBtn = styled.div`
+  font-size: 1.8rem;
+  font-weight: 700;
+  word-break: keep-all;
+  margin-top: 2rem;
+  color: ${colors.lightbrown};
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  cursor: pointer;
 `;

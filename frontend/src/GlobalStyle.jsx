@@ -26,6 +26,12 @@ const GlobalStyleWrapper = createGlobalStyle`
     font-weight: 700;
     font-style: normal;
   }
+  textarea{
+    font-family: "Kimyooyee";
+    font-weight: 700;
+    font-style: normal;
+    resize: none;
+  }
   button {
     background:none;
     border:0;

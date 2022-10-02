@@ -4,7 +4,7 @@ export const colors = {
   lightgray: "#EEEEEE",
   darkgray: "#1D1D1D",
   orange: "#FF8D4E",
-  ivory: "#FFFBF2",
+  ivory: "#EFE7D3",
   purple: "#7885FD",
   lightbrown: "#9E7358",
 };
