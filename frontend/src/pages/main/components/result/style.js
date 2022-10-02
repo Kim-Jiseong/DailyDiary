@@ -59,22 +59,3 @@ export const NextBtn = styled.div`
   right: 10%;
   cursor: pointer;
 `;
-export const Btn = styled.label`
-  margin-top: 2rem;
-  width: 100%;
-  height: 3.6rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  font-weight: 700;
-  color: white;
-  background-color: ${colors.lightbrown};
-  font-size: 2rem;
-  transition: all 0.5s;
-  border: 2px solid ${colors.lightbrown};
-  &:hover {
-    background-color: transparent;
-    color: ${colors.lightbrown};
-  }
-`;

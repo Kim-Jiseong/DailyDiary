@@ -6,7 +6,7 @@ import Component1 from "./components/1/index";
 import { useRecoilState } from "recoil";
 import pageIdxAtom from "atoms/pageIdxAtom";
 import HTMLFlipBook from "react-pageflip";
-const Main = (props) => {
+const Result = (props) => {
   const [pageIdx, setPageIdx] = useRecoilState(pageIdxAtom);
   const [animation, setAnimation] = useState(false);
   const book = useRef();
@@ -20,17 +20,6 @@ const Main = (props) => {
 
   return (
     <S.Container>
-      {/* <S.Btn
-        onClick={() => {
-          localStorage.removeItem("imageSrc");
-          localStorage.removeItem("quizNumber");
-          localStorage.removeItem("input");
-          localStorage.removeItem("date");
-          localStorage.removeItem("diary");
-        }}
-      >
-        로컬스토리지 초기화
-      </S.Btn> */}
       {pageIdx < 2 && <Component0></Component0>}
       {pageIdx >= 2 && <Component1></Component1>}
       {pageIdx !== 0 && (
@@ -47,4 +36,4 @@ const Main = (props) => {
   );
 };
 
-export default Main;
+export default Result;

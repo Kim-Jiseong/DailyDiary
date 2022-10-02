@@ -4,4 +4,4 @@ const filesAtom = atom({
   key: "files",
   default: "",
 });
-export default pageIdxAtom;
+export default filesAtom;
